@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Instagram Feed</title> 
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light row d-flex flex-row">
+            <a class="navbar-brand col-3" href="#">
+                <i class="fab fa-instagram" id="icon"> Instagram </i>
+            </a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success col-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown col-3" id="post">
+                <button class="btn btn-secondary dropdown-toggle" type="button" 
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="post">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <ul class="nav nav-tabs justify-content-center" id="myTab">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <i class="fas fa-border-all"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-myprofile-tab" data-toggle="pill" href="#pills-myprofile" role="tab" aria-controls="pills-myprofile" aria-selected="false">
+                        <i class="far fa-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="tab-content" id="pills-tabContent"> 
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row d-flex flex-row" id="home">
+                    <div class="col-4"> <img src="https://images.unsplash.com/photo-1580649969708-0f2c74c81797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="img-fluid"> </div>
+                    <div class="col-4"> <img src="http://iheartdogs.com/wp-content/uploads/2015/07/shutterstock_43289533.jpg" class="img-fluid"> </div>
+                    <div class="col-4"> <img src="https://content.omlet.co.uk/images/originals/Dog-Dog_Guide-A_very_healthy_and_happy_Golden_Retriever.jpg" class="img-fluid"> </div>
+                </div>
+                <div class="row d-flex flex-row" id="home">
+                    <div class="col-4"> <img src="https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg" class="img-fluid"> </div>
+                    <div class="col-4"> <img src="https://cdn.mos.cms.futurecdn.net/KYEJp9vem3QQFGhi25SYx4-1200-80.jpg" class="img-fluid"> </div>
+                    <div class="col-4"> <img src="https://www.gannett-cdn.com/presto/2021/02/22/USAT/a1828d63-1cff-434c-b878-6016cd4b972f-VPC_ADVENTUROUS_CATS_DESK.00_00_20_23.Still001.jpg?width=660&height=371&fit=crop&format=pjpg&auto=webp" class="img-fluid"> </div>
+                </div>
+                <div class="row d-flex flex-row" id="home">
+                    <div class="col-4"> <img src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/WALN4MAIT4I6VLRIPUMJQAJIME.jpg" class="img-fluid"> </div>
+                    <div class="col-4"> <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F20%252F2021%252F08%252F06%252Fcat.jpg&q=85" class="img-fluid"> </div>
+                    <div class="col-4"> <img src="https://freshpet.com/wp-content/uploads/2019/09/cat-2224201_1280.jpg" class="img-fluid"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+</body>
+</html>
