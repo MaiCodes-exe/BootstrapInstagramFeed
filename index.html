@@ -9,7 +9,7 @@
             integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oleo+Script%22%3E
         <link rel="stylesheet" href="./style.css" type="text/css">
-        <title>Bootstrap Instagram Photo Feed</title>
+        <title>Instagram Photo Feed with Boostrap</title>
     </head>
 
 </head>
@@ -17,46 +17,45 @@
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-light bg-light row d-flex flex-row">
-            <a class="navbar-brand col-3" href="#">
+            <a class="navbar-brand col-4"  href="#">
                 <i class="fab fa-instagram" id="icon"> Instagram </i>
             </a>
-            <!-- Button trigger modal -->
-            <!-- <button type="button" class="btn btn-success col-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Create a new post
-            </button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Add a caption
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+            <ul class="nav justify-content-end">
+                <li class="nav-item align-self-center">
+                    <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#myModal">Create a Post</button>
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">
+                                        Create a Post
+                                    </h4>
+                                </div>
+                                <div class="modal-body"> 
+                                    <p>Add a caption</p>
+                                </div>
+                                <div class="modal-footer"> 
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div> -->
-            <div class="dropdown col-3" id="post">
-                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa-solid fa-gear"></i>
-
-                    <span class="caret"></span>
-                <a class="btn btn-default" data-toggle="dropdown">
-                </a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                    <li><a tabindex="-1" href="#">Action</a></li>
-                    <li><a tabindex="-1" href="#">Another action</a></li>
-                    <li><a tabindex="-1" href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a tabindex="-1" href="#">Separated link</a></li>
-                </ul>
-            </div>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-lg btn-link px-3" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog"></i><i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item text-right" href="#">Action</a>
+                        <a class="dropdown-item text-right" href="#">Another Action</a>
+                        <a class="dropdown-item text-right" data-toggle="modal" data-target="#exampleModal">Modal Form</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-right" href="#">Log Out</a>
+                    </div>
+                </li><!-- gear button -->
+            </ul><!-- navbar buttons -->
         </nav>
     </div>
     <div class="container">
