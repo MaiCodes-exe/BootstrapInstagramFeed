@@ -21,7 +21,7 @@
                 <i class="fab fa-instagram" id="icon"> Instagram </i>
             </a>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-success col-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <!-- <button type="button" class="btn btn-success col-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Create a new post
             </button>
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -33,7 +33,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            Add a caption
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -41,34 +41,23 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="dropdown col-3" id="post">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <i class="fas fa-cog"></i>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="post">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa-solid fa-gear"></i>
+
+                    <span class="caret"></span>
+                <a class="btn btn-default" data-toggle="dropdown">
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a tabindex="-1" href="#">Action</a></li>
+                    <li><a tabindex="-1" href="#">Another action</a></li>
+                    <li><a tabindex="-1" href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a tabindex="-1" href="#">Separated link</a></li>
                 </ul>
             </div>
         </nav>
-        <!-- <div class=" container justify-content-center">
-            <ul class="nav nav-pills" id="myTab" row="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
-                        <i class="fas fa-border-all"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-myprofile-tab" data-toggle="pill" href="#pills-myprofile" role="tab" aria-controls="pills-myprofile" aria-selected="false">
-                        <i class="far fa-square"></i>
-                    </a>
-                </li>
-            </ul>
-        </div> -->
     </div>
     <div class="container">
         <div class="d-flex justify-content-center ">
@@ -84,39 +73,297 @@
     </div>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <h1>home</h1>
+            <div class="row d-flex flex-row" id="home">
+                <div class="col-4"> <img src="https://images.unsplash.com/photo-1580649969708-0f2c74c81797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="img-fluid"> </div>
+                <div class="col-4"> <img src="http://iheartdogs.com/wp-content/uploads/2015/07/shutterstock_43289533.jpg" class="img-fluid"> </div>
+                <div class="col-4"> <img src="https://content.omlet.co.uk/images/originals/Dog-Dog_Guide-A_very_healthy_and_happy_Golden_Retriever.jpg" class="img-fluid"> </div>
+            </div>
+            <div class="row d-flex flex-row" id="home">
+                <div class="col-4"> <img src="https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg" class="img-fluid"> </div>
+                <div class="col-4"> <img src="https://cdn.mos.cms.futurecdn.net/KYEJp9vem3QQFGhi25SYx4-1200-80.jpg" class="img-fluid"> </div>
+                <div class="col-4"> <img src="https://www.gannett-cdn.com/presto/2021/02/22/USAT/a1828d63-1cff-434c-b878-6016cd4b972f-VPC_ADVENTUROUS_CATS_DESK.00_00_20_23.Still001.jpg?width=660&height=371&fit=crop&format=pjpg&auto=webp" class="img-fluid"> </div>
+            </div>
+            <div class="row d-flex flex-row" id="home">
+                <div class="col-4"> <img src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/WALN4MAIT4I6VLRIPUMJQAJIME.jpg" class="img-fluid"> </div>
+                <div class="col-4"> <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F20%252F2021%252F08%252F06%252Fcat.jpg&q=85" class="img-fluid"> </div>
+                <div class="col-4"> <img src="https://freshpet.com/wp-content/uploads/2019/09/cat-2224201_1280.jpg" class="img-fluid"> </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-            style="background-color: gray;">
-            <h1>not home</h1>
+            style="background-color: white">
+            <div class="card col-5 mx-auto">
+                <div class="card-header" style="background-color:white">
+                    <div class="row">
+                        <div class="col-10">
+                            <p>My First Post</p>
+                        </div>
+                        <div class="col-2">
+                            <p>12/14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body col-12">
+                    <img class="col-12 img-fluid" src="https://images.unsplash.com/photo-1580649969708-0f2c74c81797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card_icons">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="far fa-comment fa-2x"></i>
+                        <i class="far fa-paper-plane fa-2x"></i>
+                        <i class="far fa-bookmark fa-2x" id="flag"></i>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-text">
+                            Liked by <b>4geeksAcademy</b>, <b>html5</b>, <b>web</b> and <b>100,000 others</b>
+                        </p>
+                        <p class="card-text pb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-5 mx-auto">
+                <div class="card-header" style="background-color:white">
+                    <div class="row">
+                        <div class="col-10">
+                            <p>My First Post</p>
+                        </div>
+                        <div class="col-2">
+                            <p>12/14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body col-12">
+                    <img class="col-12 img-fluid" src="http://iheartdogs.com/wp-content/uploads/2015/07/shutterstock_43289533.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card_icons">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="far fa-comment fa-2x"></i>
+                        <i class="far fa-paper-plane fa-2x"></i>
+                        <i class="far fa-bookmark fa-2x" id="flag"></i>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-text">
+                            Liked by <b>4geeksAcademy</b>, <b>html5</b>, <b>web</b> and <b>100,000 others</b>
+                        </p>
+                        <p class="card-text pb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-5 mx-auto">
+                <div class="card-header" style="background-color:white">
+                    <div class="row">
+                        <div class="col-10">
+                            <p>My First Post</p>
+                        </div>
+                        <div class="col-2">
+                            <p>12/14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body col-12">
+                    <img class="col-12 img-fluid" src="https://content.omlet.co.uk/images/originals/Dog-Dog_Guide-A_very_healthy_and_happy_Golden_Retriever.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card_icons">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="far fa-comment fa-2x"></i>
+                        <i class="far fa-paper-plane fa-2x"></i>
+                        <i class="far fa-bookmark fa-2x" id="flag"></i>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-text">
+                            Liked by <b>4geeksAcademy</b>, <b>html5</b>, <b>web</b> and <b>100,000 others</b>
+                        </p>
+                        <p class="card-text pb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-5 mx-auto">
+                <div class="card-header" style="background-color:white">
+                    <div class="row">
+                        <div class="col-10">
+                            <p>My First Post</p>
+                        </div>
+                        <div class="col-2">
+                            <p>12/14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body col-12">
+                    <img class="col-12 img-fluid" src="https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card_icons">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="far fa-comment fa-2x"></i>
+                        <i class="far fa-paper-plane fa-2x"></i>
+                        <i class="far fa-bookmark fa-2x" id="flag"></i>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-text">
+                            Liked by <b>4geeksAcademy</b>, <b>html5</b>, <b>web</b> and <b>100,000 others</b>
+                        </p>
+                        <p class="card-text pb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-5 mx-auto">
+                <div class="card-header" style="background-color:white">
+                    <div class="row">
+                        <div class="col-10">
+                            <p>My First Post</p>
+                        </div>
+                        <div class="col-2">
+                            <p>12/14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body col-12">
+                    <img class="col-12 img-fluid" src="https://cdn.mos.cms.futurecdn.net/KYEJp9vem3QQFGhi25SYx4-1200-80.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card_icons">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="far fa-comment fa-2x"></i>
+                        <i class="far fa-paper-plane fa-2x"></i>
+                        <i class="far fa-bookmark fa-2x" id="flag"></i>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-text">
+                            Liked by <b>4geeksAcademy</b>, <b>html5</b>, <b>web</b> and <b>100,000 others</b>
+                        </p>
+                        <p class="card-text pb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-5 mx-auto">
+                <div class="card-header" style="background-color:white">
+                    <div class="row">
+                        <div class="col-10">
+                            <p>My First Post</p>
+                        </div>
+                        <div class="col-2">
+                            <p>12/14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body col-12">
+                    <img class="col-12 img-fluid" src="https://www.gannett-cdn.com/presto/2021/02/22/USAT/a1828d63-1cff-434c-b878-6016cd4b972f-VPC_ADVENTUROUS_CATS_DESK.00_00_20_23.Still001.jpg?width=660&height=371&fit=crop&format=pjpg&auto=webp" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card_icons">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="far fa-comment fa-2x"></i>
+                        <i class="far fa-paper-plane fa-2x"></i>
+                        <i class="far fa-bookmark fa-2x" id="flag"></i>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-text">
+                            Liked by <b>4geeksAcademy</b>, <b>html5</b>, <b>web</b> and <b>100,000 others</b>
+                        </p>
+                        <p class="card-text pb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-5 mx-auto">
+                <div class="card-header" style="background-color:white">
+                    <div class="row">
+                        <div class="col-10">
+                            <p>My First Post</p>
+                        </div>
+                        <div class="col-2">
+                            <p>12/14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body col-12">
+                    <img class="col-12 img-fluid" src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/WALN4MAIT4I6VLRIPUMJQAJIME.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card_icons">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="far fa-comment fa-2x"></i>
+                        <i class="far fa-paper-plane fa-2x"></i>
+                        <i class="far fa-bookmark fa-2x" id="flag"></i>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-text">
+                            Liked by <b>4geeksAcademy</b>, <b>html5</b>, <b>web</b> and <b>100,000 others</b>
+                        </p>
+                        <p class="card-text pb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-5 mx-auto">
+                <div class="card-header" style="background-color:white">
+                    <div class="row">
+                        <div class="col-10">
+                            <p>My First Post</p>
+                        </div>
+                        <div class="col-2">
+                            <p>12/14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body col-12">
+                    <img class="col-12 img-fluid" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F20%252F2021%252F08%252F06%252Fcat.jpg&q=85" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card_icons">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="far fa-comment fa-2x"></i>
+                        <i class="far fa-paper-plane fa-2x"></i>
+                        <i class="far fa-bookmark fa-2x" id="flag"></i>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-text">
+                            Liked by <b>4geeksAcademy</b>, <b>html5</b>, <b>web</b> and <b>100,000 others</b>
+                        </p>
+                        <p class="card-text pb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-5 mx-auto">
+                <div class="card-header" style="background-color:white">
+                    <div class="row">
+                        <div class="col-10">
+                            <p>My First Post</p>
+                        </div>
+                        <div class="col-2">
+                            <p>12/14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body col-12">
+                    <img class="col-12 img-fluid" src="https://freshpet.com/wp-content/uploads/2019/09/cat-2224201_1280.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card_icons">
+                        <i class="far fa-heart fa-2x"></i>
+                        <i class="far fa-comment fa-2x"></i>
+                        <i class="far fa-paper-plane fa-2x"></i>
+                        <i class="far fa-bookmark fa-2x" id="flag"></i>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-text">
+                            Liked by <b>4geeksAcademy</b>, <b>html5</b>, <b>web</b> and <b>100,000 others</b>
+                        </p>
+                        <p class="card-text pb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- <div class="container">
-        <div class="tab-content" id="pills-tabContent"> 
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="row d-flex flex-row" id="home">
-                    <div class="col-4"> <img src="https://images.unsplash.com/photo-1580649969708-0f2c74c81797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="img-fluid"> </div>
-                    <div class="col-4"> <img src="http://iheartdogs.com/wp-content/uploads/2015/07/shutterstock_43289533.jpg" class="img-fluid"> </div>
-                    <div class="col-4"> <img src="https://content.omlet.co.uk/images/originals/Dog-Dog_Guide-A_very_healthy_and_happy_Golden_Retriever.jpg" class="img-fluid"> </div>
-                </div>
-                <div class="row d-flex flex-row" id="home">
-                    <div class="col-4"> <img src="https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg" class="img-fluid"> </div>
-                    <div class="col-4"> <img src="https://cdn.mos.cms.futurecdn.net/KYEJp9vem3QQFGhi25SYx4-1200-80.jpg" class="img-fluid"> </div>
-                    <div class="col-4"> <img src="https://www.gannett-cdn.com/presto/2021/02/22/USAT/a1828d63-1cff-434c-b878-6016cd4b972f-VPC_ADVENTUROUS_CATS_DESK.00_00_20_23.Still001.jpg?width=660&height=371&fit=crop&format=pjpg&auto=webp" class="img-fluid"> </div>
-                </div>
-                <div class="row d-flex flex-row" id="home">
-                    <div class="col-4"> <img src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/WALN4MAIT4I6VLRIPUMJQAJIME.jpg" class="img-fluid"> </div>
-                    <div class="col-4"> <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F20%252F2021%252F08%252F06%252Fcat.jpg&q=85" class="img-fluid"> </div>
-                    <div class="col-4"> <img src="https://freshpet.com/wp-content/uploads/2019/09/cat-2224201_1280.jpg" class="img-fluid"> </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="pills-myprofile" role="tabpanel" aria-labelledby="pills-myprofile-tab"> 
-                <h1> Hello World</h1>
-            </div>
-
-        </div>
-    </div> -->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
